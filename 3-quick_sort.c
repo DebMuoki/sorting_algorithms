@@ -68,6 +68,9 @@ void quick_sort_helper(int arr[], int low, int high, size_t size)
  */
 void quick_sort(int arr[], size_t size)
 {
+	if (arr == NULL || size < 2)
+		return;
+
 	quick_sort_helper(arr, 0, size - 1, size);
 }
 
